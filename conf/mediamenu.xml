@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+	<menu>
+		<name>传统</name>
+		<menus>
+			<menu>
+				<name>新闻</name>
+				<typeid>1</typeid>
+			</menu>
+			<menu>
+				<name>论坛</name>
+				<typeid>2</typeid>
+
+			</menu>
+			<menu>
+				<name>博客</name>
+				<typeid>3</typeid>
+			</menu>
+			<menu>
+				<name>报纸</name>
+				<typeid>9</typeid>
+			</menu>
+			<menu>
+				<name>杂志</name>
+				<typeid>10</typeid>
+			</menu>
+		</menus>
+	</menu>
+
+	<menu>
+		<name>微博</name>
+		<typeid>4</typeid>
+		<types>
+			<type>
+				<name>新浪</name>
+				<identifier>sina_weibo</identifier>
+			</type>
+			<type>
+				<name>搜狐</name>
+				<identifier>sohu_weibo</identifier>
+			</type>
+			<type>
+				<name>腾讯</name>
+				<identifier>qq_weibo</identifier>
+			</type>		
+			<type>
+				<name>网易</name>
+				<identifier>163_weibo</identifier>
+			</type>					
+		</types>
+	</menu>
+	
+</configuration>

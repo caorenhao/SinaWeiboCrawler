@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Identifier 过滤器，根据需要补充规则。
+1. 对搜索结果和没有identifier的Document尝试更加准确的identifier.
+2. 匹配基于域名，以最接近的规则为准。如 qq.com 和 news.qq.com， 网页 http://zt.news.qq.com/a/b2.html 匹配到
+规则 news.qq.com。
+3. 每一个规则必填identifer, 以 _news 结尾识别为 新闻， _blog 识别为博客， _bbs 识别为论坛 
+ -->
+<rules>
+	<!-- 包含多个规则 (rule)-->
+	<rule>
+		<!-- domains包含多个domain, domain仅限于域名 -->
+		<domains>
+			<domain>news.qq.com</domain>
+		</domains>
+		<!-- 要替代的identifier， 必填 -->
+		<identifier>qq_news</identifier>
+		<!-- 要替代的mediatype, 可填。 不填的话尝试根据identifer名称解析，解析失败时忽略-->
+		<mediatype>1</mediatype>
+	</rule>
+</rules>

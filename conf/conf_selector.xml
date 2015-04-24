@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 用来配置不同的配置环境环境 -->
+<configuration>
+	<!-- 默认配置文件 -->
+	<default>
+		<!-- 配置文件的名称 -->
+		<conf>DevSinglePC</conf>
+		<description><![CDATA[开发环境单机运行，默认配置文件]]></description>
+	</default>
+
+	<!-- 其中一种方案 , active 表示是否激活这个选择器, 默认true -->
+	<selector active="false">
+		<!-- 选择的条件 -->
+		<conditions>
+			<!-- 环境变量的条件, active 为可选，默认为true -->
+			<envCond active="false">
+				<key>DICL_ROOT</key>
+				<value>D:\javapro\DistributedCrawler</value>
+			</envCond>
+			<!-- 域名或IP 的条件 -->
+			<domainCond active="true">
+				<!-- 可以配置多个域名和IP -->
+				<domain>vernkin-PC1</domain>
+				<domain>a.com</domain>
+			</domainCond>
+		</conditions>
+		<conf>Test1</conf>
+		<description><![CDATA[测试用途，不用删除]]></description>		
+	</selector>
+	
+	<selector active="false">
+		<conditions>
+			<domainCond>
+				<domain>vernkin-PC1</domain>
+			</domainCond>
+		</conditions>
+		<conf>DevTwoPC</conf>
+		<description><![CDATA[本机加一个远程PC]]></description>
+	</selector>
+	
+	<selector active="true">
+		<conditions>
+			<envCond>
+				<key>IYQ_ENV</key>
+				<value>ShiDao</value>
+			</envCond>
+		</conditions>
+		<conf>ProductEnv</conf>
+		<description><![CDATA[世导机房部署]]></description>
+	</selector>
+	
+	<selector active="true">
+		<conditions>
+			<envCond>
+				<key>IYQ_ENV</key>
+				<value>NJ_1</value>
+			</envCond>
+		</conditions>
+		<conf>NJ_1</conf>
+		<description><![CDATA[南京一号机房]]></description>
+	</selector>
+
+</configuration>

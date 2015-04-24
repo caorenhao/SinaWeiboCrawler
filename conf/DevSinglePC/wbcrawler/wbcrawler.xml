@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<redis>
+		<host>192.168.32.210</host>
+		<port>6379</port>
+	</redis>
+	
+	<keyword>
+		<palm deptId='51,52,53'>userdb_www</palm>
+		<palm deptId='0'>userdb_hzgsxt</palm>
+		<palm deptId='0'>userdb_hnskjt</palm>
+	</keyword>
+	
+	<account defaultPW='sinaTest'>
+		<username >sinatest_1@163.com</username>
+		<username >sinatest_2@163.com</username>
+		<username >sinatest_3@163.com</username>
+		<username >sinatest_4@163.com</username>
+		<username >sinatest_5@163.com</username>
+		<username >sinatest_6@163.com</username>
+		<username >sinatest_7@163.com</username>
+		<username >sinatest_8@163.com</username>
+		<username >sinatest_9@163.com</username>
+		<username >sinatest_10@163.com</username>
+		<username >sinatest_11@163.com</username>
+		<username >sinatest_12@163.com</username>
+		<username >sinatest_13@163.com</username>
+		<username >sinatest_14@163.com</username>
+		<username >sinatest_15@163.com</username>
+		<username >sinatest_16@163.com</username>
+		<username >sinatest_17@163.com</username>
+		<username >sinatest_18@163.com</username>
+		<username >sinatest_19@163.com</username>
+		<username >sinatest_20@163.com</username>
+		<username password='caorenhao'>caorenhao_1@163.com</username>
+		<username password='caorenhao'>caorenhao_2@163.com</username>
+		<username password='caorenhao'>caorenhao_3@163.com</username>
+		<username password='caorenhao'>caorenhao_4@163.com</username>
+		<username password='caorenhao'>caorenhao_5@163.com</username>
+		<username password='caorenhao'>caorenhao_6@163.com</username>
+		<username password='caorenhao'>caorenhao_7@163.com</username>
+		<username password='caorenhao'>caorenhao_8@163.com</username>
+		<username password='caorenhao'>caorenhao_9@163.com</username>
+		<username password='caorenhao'>caorenhao_10@163.com</username>
+	</account>
+	
+	<workDirMgr>
+		<workDir>D:/temp/IYQData/wbcrawl</workDir>
+	</workDirMgr>
+</configuration>

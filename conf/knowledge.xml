@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 资源文件统一在 conf/knowledge下 -->
+<configuration>
+	<!-- 每一个resource的资源resource的name属性同名目录下 -->
+	<resource>
+		<name>emotion</name>
+		<description>情绪词</description>
+		<!-- 情绪列表 -->
+		<moods>
+			<!-- 正面词 -->
+			<positive>
+				<file>positive.txt</file>
+			</positive>
+			<!-- 负面词 -->
+			<negative>
+				<file>negative.txt</file>
+			</negative>
+			<!-- 中立词 -->
+			<neutral>
+				<file>neutral.txt</file>
+			</neutral>
+			<!-- 肯定词 -->
+			<yes>
+				<file>yes.txt</file>
+			</yes>
+			<!-- 否定词 -->
+			<no>
+				<file>no.txt</file>
+			</no>
+		</moods>
+	</resource>
+
+
+</configuration>
